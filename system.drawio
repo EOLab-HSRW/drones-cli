@@ -1,0 +1,82 @@
+<mxfile host="Electron" modified="2025-01-22T16:04:54.440Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.0.2 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="Lv0ACOX6qT03xByt9NsP" version="23.0.2" type="device">
+  <diagram name="Page-1" id="8qQfCWlxuZlzs1HnGYQe">
+    <mxGraphModel dx="989" dy="699" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="2339" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="0ker_bun_fKuUjKcQQ0Q-8" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="250" width="110" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="0ker_bun_fKuUjKcQQ0Q-5" value="params" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document" vertex="1" parent="1">
+          <mxGeometry x="210" y="280" width="50" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0ker_bun_fKuUjKcQQ0Q-6" value="modules" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document" vertex="1" parent="1">
+          <mxGeometry x="210" y="350" width="50" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0ker_bun_fKuUjKcQQ0Q-7" value="version" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document" vertex="1" parent="1">
+          <mxGeometry x="210" y="420" width="50" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0ker_bun_fKuUjKcQQ0Q-9" value="fw-&amp;lt;drone-name&amp;gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="190" y="250" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0ker_bun_fKuUjKcQQ0Q-10" value="contains all the information to generate the drone firmware" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="190" y="490" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="0ker_bun_fKuUjKcQQ0Q-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="0ker_bun_fKuUjKcQQ0Q-11" target="0ker_bun_fKuUjKcQQ0Q-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0ker_bun_fKuUjKcQQ0Q-11" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="120" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="0ker_bun_fKuUjKcQQ0Q-12" value="fw-components" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="540" y="120" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0ker_bun_fKuUjKcQQ0Q-14" value="" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document" vertex="1" parent="1">
+          <mxGeometry x="560" y="150" width="40" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="0ker_bun_fKuUjKcQQ0Q-15" value="" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document" vertex="1" parent="1">
+          <mxGeometry x="570" y="160" width="40" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="0ker_bun_fKuUjKcQQ0Q-16" value="" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document" vertex="1" parent="1">
+          <mxGeometry x="580" y="170" width="40" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="0ker_bun_fKuUjKcQQ0Q-17" value="composables parameters files. E.g. Radios, payloads" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="450" y="120" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="0ker_bun_fKuUjKcQQ0Q-18" value="eolab-px4" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="305" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0ker_bun_fKuUjKcQQ0Q-19" value="cli tool for:&lt;br&gt;- building and customizing our px4-firmware&lt;br&gt;- handle SITL" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="650" y="380" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0ker_bun_fKuUjKcQQ0Q-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0ker_bun_fKuUjKcQQ0Q-27" target="0ker_bun_fKuUjKcQQ0Q-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0ker_bun_fKuUjKcQQ0Q-36" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;dashed=1;startArrow=classic;startFill=1;endArrow=none;endFill=0;" edge="1" parent="1" source="0ker_bun_fKuUjKcQQ0Q-27" target="0ker_bun_fKuUjKcQQ0Q-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0ker_bun_fKuUjKcQQ0Q-37" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;dashed=1;startArrow=classic;startFill=1;endArrow=none;endFill=0;" edge="1" parent="1" source="0ker_bun_fKuUjKcQQ0Q-27" target="0ker_bun_fKuUjKcQQ0Q-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0ker_bun_fKuUjKcQQ0Q-38" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;dashed=1;startArrow=classic;startFill=1;endArrow=none;endFill=0;" edge="1" parent="1" source="0ker_bun_fKuUjKcQQ0Q-27" target="0ker_bun_fKuUjKcQQ0Q-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0ker_bun_fKuUjKcQQ0Q-27" value="drones&lt;br&gt;catalog" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document" vertex="1" parent="1">
+          <mxGeometry x="520" y="305" width="50" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0ker_bun_fKuUjKcQQ0Q-30" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.concepts.folder;" vertex="1" parent="1">
+          <mxGeometry x="400" y="250" width="60" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="0ker_bun_fKuUjKcQQ0Q-31" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.concepts.folder;" vertex="1" parent="1">
+          <mxGeometry x="400" y="360" width="60" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="0ker_bun_fKuUjKcQQ0Q-32" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.concepts.folder;" vertex="1" parent="1">
+          <mxGeometry x="400" y="305" width="60" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="0ker_bun_fKuUjKcQQ0Q-39" value="assigns:&lt;br&gt;- id&lt;br&gt;- px4 version&lt;br&gt;- defult firmware version&lt;br&gt;- vendor&lt;br&gt;- model&lt;br&gt;- default components&lt;br&gt;- compatible components" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="480" y="370" width="160" height="115" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

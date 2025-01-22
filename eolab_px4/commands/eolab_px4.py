@@ -9,21 +9,6 @@ OPTIONS: dict[str, type[Command]] = {
     "build": BuildCommand,
 }
 
-def git_clone_px4():
-
-    if PX4_DIR.exists():
-        print("PX4 already there skipping clone.")
-        return
-
-    try:
-        # Cloning the repository using git
-        print(f"Cloning the PX4-Autopilot into {PX4_DIR}...")
-        subprocess.run(["git", "clone", "https://github.com/PX4/PX4-Autopilot.git", PX4_DIR, "--recursive"], check=True)
-        print(f"Repository cloned successfully into {PX4_DIR}")
-    except subprocess.CalledProcessError as e:
-        print(f"An error occurred while cloning PX4-Autopilot: {e}")
-
-
 def main() -> int:
 
     parser = argparse.ArgumentParser(
