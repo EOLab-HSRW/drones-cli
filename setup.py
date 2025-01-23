@@ -16,6 +16,9 @@ setup(
     install_requires=[
         "pyyaml",
     ],
+    package_data={
+        f"{__package__}": ['catalog.yml']
+    },
     entry_points={
         "console_scripts": [
             f"{__package__} = eolab_px4.commands.eolab_px4:main",

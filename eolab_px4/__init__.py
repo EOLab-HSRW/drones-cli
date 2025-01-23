@@ -1,4 +1,5 @@
 from pathlib import Path
+from .loader import catalog
 
 __version__ = '0.0.0'
 __package__ = "eolab_px4"

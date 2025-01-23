@@ -1,0 +1,38 @@
+components: ["radiomaster_tx16s"]
+drones:
+  phoenix:
+    url: https://github.com/EOLab-HSRW/fw-phoenix
+    id: 22101
+    compatible_components: ["radiomaster_tx16s"]
+    valid_vendors: ["px4"]
+    valid_models: ["fmu-v3"]
+    defaults:
+      custom_fw_version: latest
+      px4_version: "v1.15.0"
+      vendor: px4
+      model: fmu-v3
+      components: ["radiomaster_tx16s"]
+  platypus:
+    url: https://github.com/EOLab-HSRW/fw-platypus
+    id: 22102
+    compatible_components: ["radiomaster_tx16s"]
+    valid_vendors: ["px4"]
+    valid_models: ["fmu-v3"]
+    defaults:
+      custom_fw_version: latest
+      px4_version: "v1.15.0"
+      vendor: px4
+      model: fmu-v3
+      components: ["radiomaster_tx16s"]
+  sar:
+    url: https://github.com/EOLab-HSRW/fw-sar
+    id: 22103
+    compatible_components: ["radiomaster_tx16s"]
+    valid_vendors: ["px4"]
+    valid_models: ["fmu-v3"]
+    defaults:
+      custom_fw_version: latest
+      px4_version: "v1.15.0"
+      vendor: px4
+      model: fmu-v3
+      components: ["radiomaster_tx16s"]
