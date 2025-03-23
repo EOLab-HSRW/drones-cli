@@ -1,19 +1,18 @@
 import sys
 import argparse
-import subprocess
-from eolab_px4 import CACHE_DIR, PX4_DIR
-from eolab_px4.commands import Command, BuildCommand
+from drones_cli.commands import Command, BuildCommand, SimCommand
 
 
 OPTIONS: dict[str, type[Command]] = {
     "build": BuildCommand,
+    "sim": SimCommand
 }
 
 def main() -> int:
 
     parser = argparse.ArgumentParser(
-        prog="eolab_px4",
-        description="A simple tool"
+        prog="eolab-px4",
+        description="A simple tool to work with eolab drones"
     )
 
     subparsers = parser.add_subparsers(dest="command", required=True, help="Available commands")
@@ -25,6 +24,7 @@ def main() -> int:
     args = parser.parse_args()
 
     command_cls = OPTIONS.get(args.command)
+
     if command_cls:
         command_cls().execute(args)
     else:

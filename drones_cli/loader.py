@@ -3,12 +3,12 @@ import pickle
 from pathlib import Path
 
 class Loader:
-    def __init__(self, yaml_file, cache_file='catalog_cache.pkl'):
+    def __init__(self, yaml_file, cache_file='catalog.pkl'):
         self.yaml_file = Path(yaml_file)
-        self.cache_file = Path(cache_file)
-        self.config = self._load_config()
-    
-    def _load_config(self):
+        self.cache_file = self.yaml_file.parent / Path(cache_file)
+        self.catalog = self._load_catalog()
+
+    def _load_catalog(self):
         if self.cache_file.exists() and self.cache_file.stat().st_mtime >= self.yaml_file.stat().st_mtime:
             with self.cache_file.open('rb') as cache:
                 return pickle.load(cache)
@@ -18,7 +18,3 @@ class Loader:
             with self.cache_file.open('wb') as cache:
                 pickle.dump(config, cache)
             return config
-
-loader = Loader(Path(__file__).parent / 'catalog.yml')
-
-catalog = loader.config

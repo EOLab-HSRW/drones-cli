@@ -1,8 +1,6 @@
 import sys
 import subprocess
 from pathlib import Path
-from eolab_px4 import PX4_DIR, DRONES_DIR
-from eolab_px4.catalog import DRONES
 
 def get_latest_git_tag(directory: Path):
 
@@ -34,8 +32,8 @@ def run_command(command: str, cwd: Path, check: bool = True):
         print(f"Error while executing: {command}\n{e}")
         sys.exit(1)
 
-def git_clone_px4() -> bool:
-    return fetch_repo("https://github.com/PX4/PX4-Autopilot.git", PX4_DIR)
+def git_clone_px4(dest: Path) -> bool:
+    return fetch_repo("https://github.com/PX4/PX4-Autopilot.git", dest)
 
 def fetch_repo(url: str, dest: Path) -> bool:
 
@@ -47,6 +45,7 @@ def fetch_repo(url: str, dest: Path) -> bool:
         print(f"Cloning into {dest}...")
         subprocess.run(["git", "clone", url, dest, "--recursive"], check=True)
         print(f"Repository cloned successfully into {dest}")
+        return True
     except subprocess.CalledProcessError as e:
         print(f"An error occurred while cloning: {e}")
         return False
