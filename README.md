@@ -1,6 +1,6 @@
 # `drones-cli`
 
-The objective of `drones-cli` is to be a `cli` tool to help simplify operations with [eolab drones](`https://drones.eolab.de`).
+The objective of `drones-cli` is to be a `cli` tool to help simplify operations with [eolab drones](https://drones.eolab.de).
 
 ## Install
 
